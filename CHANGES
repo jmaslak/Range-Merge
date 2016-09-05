@@ -1,3 +1,7 @@
+1.002 - Sept 5, 2016
+Joel C. Maslak <jmaslak@antelope.net>
+ * Corrections to documentation
+
 1.001 - Sept 5, 2016
 Joel C. Maslak <jmaslak@antelope.net>
  * Only run full BGP tests as an author test - these tests were failing
