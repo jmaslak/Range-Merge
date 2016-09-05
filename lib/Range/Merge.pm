@@ -82,7 +82,7 @@ This form is used by the C<merge_ipv4()> function.
 
 =cut
 
-=function merge($ranges)
+=func merge($ranges)
 
 This is the soul of the C<Range::Merge> module - it merges an array
 reference of ranges (passed in as the sole argument).  The output is
@@ -97,7 +97,7 @@ sub merge($ranges) {
     return _combine($split);
 }
 
-=function merge_ipv4($cidr)
+=func merge_ipv4($cidr)
 
 This is functionally similar to the C<merge> function, except for the
 type of input it takes. The C<$cidr> parameter must consist of an
