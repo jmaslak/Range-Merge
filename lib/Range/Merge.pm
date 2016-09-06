@@ -71,7 +71,7 @@ This, too is valid:
 
 In this case, we would expect the merged output to look like:
 
-  [ [0,3,'foo','baz'], [4,8,'bar,'baz'], [9,12,'foo','baz'] ]
+  [ [0,3,'foo','baz'], [4,8,'bar','baz'], [9,12,'foo','baz'] ]
 
 There is also a variation on this where, instead of a start and end integer,
 there is an IP address (IPv4 only at this point).  For example:
