@@ -33,6 +33,7 @@ outside dependencies that may be undesired.
 
 use v5.22;
 use strict;
+use warnings;
 
 use feature 'signatures';
 no warnings 'experimental::signatures';
