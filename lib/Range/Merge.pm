@@ -1,11 +1,14 @@
 #!/usr/bin/perl
 
 #
-# Copyright (C) 2016 J. Maslak
+# Copyright (C) 2016-2017 J. Maslak
 # All Rights Reserved - See License
 #
 
 package Range::Merge v0.01.00;
+
+use strict;
+use warnings;
 
 use Range::Merge::Boilerplate 'script';
 
