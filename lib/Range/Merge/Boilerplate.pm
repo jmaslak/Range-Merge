@@ -4,18 +4,13 @@
 #
 
 package Range::Merge::Boilerplate v0.01.11;
-# ABSTRACT: Generic Boilerplate (copied from JCM::Bootstrap)
+# ABSTRACT: Generic Boilerplate (copied from JTM::Bootstrap)
 
 =head1 SYNOPSIS
 
   use Range::Merge::Boilerplate 'script';
 
 =head1 DESCRIPTION
-
-This module serves two purposes.  First, it sets some default imports,
-and turns on the strictures I've come to rely upon.  Secondly, it depends
-on a number of other modules to aid in setting up new environments (I can
-just do a "cpan JCM-Boilerplate" to install everything I need).
 
 This module optionally takes one of two parameters, 'script', 'class',
 or 'role'. If 'script' is specified, the module assumes that you do not
