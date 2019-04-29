@@ -9,8 +9,6 @@ use v5.22;
 use strict;
 use warnings;
 
-use autodie;
-
 # To call this application:
 #
 # perl PerlWeeklyChallenge-Week6-Problem1.pl <numbers>
