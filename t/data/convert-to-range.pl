@@ -11,8 +11,8 @@ MAIN: {
     while (my $line=<STDIN>) {
         chomp($line);
         my (@parts) = split /\t/, $line;
-       
-        my $cidr = shift(@parts); 
+
+        my $cidr = shift(@parts);
         my ($net, $range) = $cidr =~ m/^([\d\.]+)\/(\d+)$/;
         if (!defined($range)) { die("Line $line"); }
 

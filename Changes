@@ -1,6 +1,8 @@
-1.004 - ???
+{{$NEXT}}
 Joelle Maslak <jmaslak@antelope.net>
+ * Add merge_discrete() for simple list of integers
  * Satisfy Kwality
+ * Update coding standards
 
 1.003 - Aug 18, 2017
 Joelle Maslak <jmaslak@antelope.net>

@@ -1,9 +1,9 @@
 #
-# Copyright (C) 2015,2016 Joelle Maslak
+# Copyright (C) 2015-2019 Joelle Maslak
 # All Rights Reserved - See License
 #
 
-package Range::Merge::Boilerplate v0.01.11;
+package Range::Merge::Boilerplate;
 # ABSTRACT: Generic Boilerplate (copied from JTM::Bootstrap)
 
 =head1 SYNOPSIS
@@ -39,7 +39,7 @@ use Smart::Comments;
 
 sub import($self, $type='script') {
     ### assert: ($type =~ m/^(?:class|role|script)$/ms)
-    
+
     my $target = caller;
 
     strict->import::into($target);
@@ -83,6 +83,8 @@ sub import($self, $type='script') {
 
     # For "switch" feature
     warnings->unimport::out_of($target, 'experimental::smartmatch');
+
+    return;
 }
 
 1;
