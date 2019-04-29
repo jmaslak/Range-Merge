@@ -106,7 +106,7 @@ an array reference of the merged ranges.
 sub merge($ranges) {
     my $sorted = _sort($ranges);
     my $split  = [];
-    _split( $ranges, $split );
+    _split( $sorted, $split );
     return _combine($split);
 }
 
