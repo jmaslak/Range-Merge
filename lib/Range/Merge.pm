@@ -164,7 +164,7 @@ sub merge_ipv4($cidr) {
 
 sub _cidr2range($cidr) {
     my ( $ip, @a ) = @$cidr;
-    die("Invalid IP address: $ip") if (grep /^0[0-9]/, split(/[\/.]/, $ip));
+    die("Invalid IP address: $ip") if ( grep { /^0[0-9]/ } split( /[\/.]/, $ip ) );
     my ($range) = Net::CIDR::cidr2range($ip);
     my (@parts) = map { unpack( 'N', inet_aton($_) ) } split( /-/, $range );
 
