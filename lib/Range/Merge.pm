@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 #
-# Copyright (C) 2016-2021 Joelle Maslak
+# Copyright (C) 2016-2025 Joelle Maslak
 # All Rights Reserved - See License
 #
 
@@ -187,7 +187,7 @@ sub _range2cidr($ranges) {
 # Sorts by starting address and then by reverse (less specific to more
 # specific)
 sub _sort($ranges) {
-    my (@output) = sort { ( $a->[0] <=> $b->[0] ) || ( $b->[1] <=> $a->[0] ) } @$ranges;
+    my (@output) = sort { ( $a->[0] <=> $b->[0] ) || ( $b->[1] <=> $a->[1] ) } @$ranges;
     return \@output;
 }
 
